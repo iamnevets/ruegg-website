@@ -1,0 +1,40 @@
+/* General */
+footer {
+    background-color: #223566;
+}
+
+.btn-primary {
+    background-color: #223566;
+}
+
+nav > a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav > a:hover {
+    color: #CA8575;
+}
+
+.current-page {
+    color: #CA8575;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Practices */
+/* CSS to style the description and handle the read more functionality */
+.practice-area .description {
+    max-height: 80px; /* Adjust as needed */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.practice-area .description.expanded {
+    max-height: none;
+}
+
+.practice-area .read-more {
+    cursor: pointer;
+}
+
