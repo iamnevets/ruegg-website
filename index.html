@@ -35,11 +35,11 @@
             </div>
         </nav>
 
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="index.html" class="block text-white py-2 px-4 hover:text-accent">Home</a>
-            <a href="about.html" class="block text-white py-2 px-4 hover:text-accent">About Us</a>
-            <a href="practices.html" class="block text-white py-2 px-4 hover:text-accent">Practices</a>
-            <a href="contact.html" class="block text-white py-2 px-4 hover:text-accent">Contact Us</a>
+        <div id="mobile-menu" class="hidden md:hidden z-10">
+            <a href="index.html" class="mobile-menu-item block text-white py-2 px-4 hover:text-accent">Home</a>
+            <a href="about.html" class="mobile-menu-item block text-white py-2 px-4 hover:text-accent">About Us</a>
+            <a href="practices.html" class="mobile-menu-item block text-white py-2 px-4 hover:text-accent">Practices</a>
+            <a href="contact.html" class="mobile-menu-item block text-white py-2 px-4 hover:text-accent">Contact Us</a>
             <button class="block btn-primary text-white hover:bg-accent px-4 py-2 rounded-md mx-auto my-4">Book a free
                 call</button>
         </div>
@@ -63,8 +63,7 @@
             <!-- First Section -->
             <div class="flex flex-col md:flex-row justify-center gap-10 md:mb-0 overflow-hidden">
                 <div class="w-full md:w-1/3 h-64 mb-4 rounded-md order-1 md:order-none">
-                    <img src="assets/about-us/team-member-1.png" alt="Image 1"
-                        class="w-full object-cover rounded-md">
+                    <img src="assets/about-us/team-member-1.png" alt="Image 1" class="w-full object-cover rounded-md">
                 </div>
                 <div class="text-left w-full md:w-1/2">
                     <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold mb-2">Looking for a lawyer?</h1>
@@ -182,14 +181,8 @@
             </div>
         </div>
     </footer>
-
     <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
     </script>
 
 </body>
